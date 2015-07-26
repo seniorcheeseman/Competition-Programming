@@ -1,3 +1,7 @@
 ProgrammingProblems/bin/
 ProgrammingProblems/.metadata/
 .metadata/
+ProgrammingProblems/.project
+ProgrammingProblems/.checkstyle
+ProgrammingProblems/.classpath
+ProgrammingProblems/.settings/org.eclipse.jdt.core.prefs
