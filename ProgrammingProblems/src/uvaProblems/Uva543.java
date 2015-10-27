@@ -23,7 +23,8 @@ public class Uva543 {
 				a= primes.get(x);
 				int temp = next-a;
 				if(bs[temp]){
-					b = temp;break;
+					b = temp;
+					break;
 				}
 			}
 			if(b==-1)
@@ -49,5 +50,6 @@ public class Uva543 {
 	      // cross out multiples of i starting from i * i!
 	      for (long j = i * i; j < _sieve_size; j += i) bs[(int)j] = false;
 	      primes.add((int)i);  // also add this vector containing list of primes
-	  } }
+	  }
+	}
 }

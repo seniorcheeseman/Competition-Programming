@@ -1,6 +1,5 @@
 package uvaProblems;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Uva1121 {
