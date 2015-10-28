@@ -23,9 +23,10 @@ public class Uva10061 {
 			for(long i = 2;i <= base;i++)
 			{
 				if(base%i!=0) continue;
-				
 				long b=0,n=0;
-				while(base%i==0 && base!=0){b++;base/=i;}
+				while(base%i==0 && base!=0)
+				{b++;
+				base/=i;}
 				for(long j = i;j<=dec;j*=i) n+=dec/j;
 				if(zero>n/b) zero=n/b;
 			}
