@@ -1,7 +1,6 @@
 package poj;
 
 import java.util.Scanner;
-import java.util.HashMap;
 public class TreatsForTheCows {
 	public static long[][] gg;
 	/**
@@ -12,7 +11,6 @@ public class TreatsForTheCows {
 		Scanner in = new Scanner(System.in);
 		int times = in.nextInt();
 		int[] values = new int[times];
-		String pos = "";
 		gg = new long[times+1][times+1];
 		for(int x=0; x<times;x++)
 		{
