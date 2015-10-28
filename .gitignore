@@ -5,7 +5,6 @@ ProgrammingProblems/.project
 ProgrammingProblems/.checkstyle
 ProgrammingProblems/.classpath
 ProgrammingProblems/.settings/org.eclipse.jdt.core.prefs
-ProgrammingProblems/src/spoj/
 ProgrammingProblems/src/AbstractFactory/
 ProgrammingProblems/src/singleton/
 ProgrammingProblems/src/caspaBuilder/
@@ -13,4 +12,3 @@ ProgrammingProblems/src/protoTypeClash/
 ProgrammingProblems/src/basicMathAlgorithm/
 ProgrammingProblems/src/FactoryPattern/
 ProgrammingProblems/src/other/
-ProgrammingProblems/src/poj/
