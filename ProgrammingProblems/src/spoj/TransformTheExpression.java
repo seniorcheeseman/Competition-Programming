@@ -19,13 +19,10 @@ public class TransformTheExpression {
 		{
 			String ex = input.nextLine();
 			Stack<Character> parentheses = new Stack<Character>();
-			Queue variables = new LinkedList();
-			Stack expressions = new Stack();
-			String result = "";
+			Queue<Character> variables = new LinkedList<Character>();
 			parentheses.push(ex.charAt(0));
 			for(int y=1; y<ex.length();y++)
 			{
-				String add = "";
 				char temp = ex.charAt(y);
 				if(temp == '(')
 				{
