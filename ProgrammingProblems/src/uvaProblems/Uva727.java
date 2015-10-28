@@ -15,20 +15,11 @@ public class Uva727 {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		String first = input.readLine();
 		int times = Integer.parseInt(first);
-		input.readLine();
-		boolean f = false;
 		for(int x=0; x<times;x++)
 		{
-			
-			String e = "";
-			String g;
-			while ((g =input.readLine()) != null && !g.isEmpty()) {
-				e += g;
-			}
-			char[] expc = e.toCharArray();
+			String g = input.readLine();
+			char[] expc = g.toCharArray();
 			String result = toPostFix(expc);
-			if(f)System.out.println();
-			else f= true;
 			System.out.println(result);
 		}
 	}
@@ -65,9 +56,12 @@ public class Uva727 {
                         Character op = operators.peek();
                         if ((a == '+' || a == '-') && (op == '+' || op == '-')) {
 							result += operators.pop();
-						} else if (op == '*' || op == '/') {
+						} else if((a== '*'||a=='/')&&(op == '*' || op == '/')) {
 							result += operators.pop();
-						} else
+						} 
+						else if(op=='^')
+							result+= operators.pop();
+						else
 							break;
                     }
 					operators.add(temp);
@@ -83,7 +77,7 @@ public class Uva727 {
 	}
 	public static boolean isOperand(char c)
 	{
-		return (c=='('||c==')'||c=='*'||c=='+'||c=='-'||c=='/');
+		return (c=='('||c==')'||c=='*'||c=='+'||c=='-'||c=='/'||c=='^');
 	}
 
 }
