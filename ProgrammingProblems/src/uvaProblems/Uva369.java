@@ -16,21 +16,27 @@ public class Uva369 {
 			int a = in.nextInt();
 			int b= in.nextInt();
 			if(a==0&&b==0)break;
-			BigInteger out =BigInteger.valueOf(1);
-			BigInteger div = BigInteger.valueOf(1);
-			int y = 1;
-			for(int x=a;x>a-b;x--)
-			{
-				if(y<=b)
-				{
-						div = div.multiply(BigInteger.valueOf(y));
-						y++;
-				}	
-				out = out.multiply(BigInteger.valueOf(x));
-			}
-			out = out.divide(div);
+			BigInteger out = combination(a,b);
 			System.out.println(a+" things taken "+b+" at a time is "+out.toString()+" exactly.");
 		}
+	}
+	
+	public static BigInteger combination(int n, int r)
+	{
+		BigInteger out =BigInteger.valueOf(1);
+		BigInteger div = BigInteger.valueOf(1);
+		int y = 1;
+		for(int x=n;x>n-r;x--)
+		{
+			if(y<=r)
+			{
+					div = div.multiply(BigInteger.valueOf(y));
+					y++;
+			}	
+			out = out.multiply(BigInteger.valueOf(x));
+		}
+		out = out.divide(div);
+		return out;
 	}
 
 }
